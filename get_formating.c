@@ -1,11 +1,10 @@
 #include "holberton.h"
 
-int (*get_formating(char *s))(void *)
+int (*get_formating(const char *s))(va_list)
 {
 	format_op ops[] = {
 		{"c", character},
 		{"s", string},
-		{"d", decimal},
 		{NULL, NULL}
 	};
 	int i;
@@ -13,11 +12,9 @@ int (*get_formating(char *s))(void *)
 	i = 0;
 	while (ops[i].format != NULL)
 	{
-		if (strcmp(ops[i].format, s) == 0)
-		{
-			break;
-		}
+		if (*s == *ops[i].format)
+			return (ops[i].f);
 		i++;
 	}
-	return (ops[i].f);
+	exit(1);
 }
