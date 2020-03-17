@@ -6,10 +6,10 @@
 #include <unistd.h>
 int _putchar(char c);
 int _puts(char *str);
-int (*get_formating(char *s))(void *);
-int character(void *c);
-int string(void *s);
-int decimal(void *d);
+int (*get_formating(const char *s))(va_list);
+int character(va_list c);
+int _strlen(char *s);
+int string(va_list s);
 int _printf(const char *format, ...);
 
 typedef struct op
