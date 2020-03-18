@@ -14,31 +14,31 @@ int _printf(const char *format, ...)
 	{
 		while (*recorrer != '%')
 		{
+
 			bytes += write(1, recorrer, 1);
 			recorrer++;
+			if (*recorrer == '\0')
+				return ((int)bytes);
 		}
-		
-			recorrer++;
 
-			if (*recorrer == '%')
-			{
-				bytes += write(1, recorrer, 1);
-			}
-			else if (*recorrer == '\0')
-			{
-				bytes += write(1, "%", 1);
-				
-			}
-			else if (*recorrer == 's' || *recorrer == 'c')
-			{
-				bytes += get_formating(recorrer)(prints);
-			}
-			else if (*recorrer == '\0' && (recorrer - 1) == format)
-			{
-				return (-1);
-			}
-		
-		
+		recorrer++;
+
+		if (*recorrer == '%')
+		{
+			bytes += write(1, recorrer, 1);
+		}
+		else if (*recorrer == '\0')
+		{
+			bytes += write(1, "%", 1);
+		}
+		else if (*recorrer == 's' || *recorrer == 'c')
+		{
+			bytes += get_formating(recorrer)(prints);
+		}
+		else if (*recorrer == '\0' && (recorrer - 1) == format)
+		{
+			return (-1);
+		}
 	}
 	va_end(prints);
 	return ((int)bytes);
