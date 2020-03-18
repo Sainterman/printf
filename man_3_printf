@@ -1,0 +1,33 @@
+.TH PRINTF(3) "17 March 2020" "v.01" "man_3_printf"
+.SH NAME
+.B printf - format and print data
+.SH SYNOPSIS
+_printf FORMAT [ARGUMENT]...
+_printf OPTION
+.SH DESCRIPTION
+Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
+--help display this help and exit
+--version
+output version information and exit
+FORMAT controls the output as in C printf.  Interpreted sequences are:
+\\"     double quote
+\\\     backslash
+\\a     alert (BEL)
+\\b     backspace
+\\c     produce no further output
+\\e     escape
+\\f     form feed
+\\n     new line
+\\r     carriage return
+\\t     horizontal tab
+\\v     vertical tab
+.SH AUTHOR
+Written by Santiago Castillo - Aldebaran Lopera.
+.SH REPORTING BUGS
+Report printf bugs to Aldebaranlopera14@gmail.com
+.SH SEE ALSO
+printf(3)
+The full documentation for printf is maintained as a Texinfo manual.  If the  info  and  printf  programs  are
+properly installed at your site, the command
+info coreutils 'printf invocation'
+should give you access to the complete manual.
