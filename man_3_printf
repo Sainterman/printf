@@ -24,14 +24,7 @@ FORMAT controls the output as in C printf.  Interpreted sequences are:
 .SH AUTHOR
 Written by Santiago Castillo - Aldebaran Lopera.
 .SH REPORTING BUGS
-Report printf bugs to bug-coreutils@gnu.org
-GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
-General help using GNU software: <http://www.gnu.org/gethelp/>
-Report printf translation bugs to <http://translationproject.org/team/>
-.SH COPYRIGHT
-Copyright    2013  Free  Software  Foundation,  Inc.   License  GPLv3+:  GNU   GPL   version   3   or   later
-<http://gnu.org/licenses/gpl.html>.
-This  is  free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+Report printf bugs to Aldebaranlopera14@gmail.com
 .SH SEE ALSO
 printf(3)
 The full documentation for printf is maintained as a Texinfo manual.  If the  info  and  printf  programs  are
