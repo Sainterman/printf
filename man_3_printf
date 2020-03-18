@@ -1,4 +1,4 @@
-.TH PRINTF(3) "04 May 2015" "0.32" "man_3_printf"
+.TH PRINTF(3) "17 March 2020" "v.01" "man_3_printf"
 .SH NAME
 .B printf - format and print data
 .SH SYNOPSIS
@@ -35,7 +35,7 @@ Variable widths are handled.
 NOTE: your  shell  may  have  its own version of printf, which usually supersedes the version described here.
 Please refer to your shell's documentation for details about the options it supports.
 .SH AUTHOR
-Written by David MacKenzie.
+Written by Santiago Castillo - Aldebaran Lopera.
 .SH REPORTING BUGS
 Report printf bugs to bug-coreutils@gnu.org
 GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
