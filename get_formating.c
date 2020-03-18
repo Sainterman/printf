@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-int (*get_formating(const char *s))(va_list)
+int (*get_formating(const char *s))(va_list list)
 {
 	format_op ops[] = {
 		{"c", character},

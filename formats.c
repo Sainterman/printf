@@ -20,11 +20,11 @@ int _strlen(char *s)
 }
 int character(va_list c)
 {
-	char *letra = va_arg(c, char *);
+	int letra = va_arg(c, int);
 	
-	unsigned int b = write(1, letra, 1);
+	write(1, &letra, 1);
 
-	return (b);
+	return (1);
 }
 
 int string(va_list s)
